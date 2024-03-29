@@ -1,0 +1,51 @@
+S.no,Title,Runtime,Genre,Rating,Metascore,Votes,Gross_Earning_in_Mil,Director,Actor,Year
+1,The Shawshank Redemption,142,Drama,9.3,80,1934970,28.34,Frank Darabont,Tim Robbins,1994
+2,The Godfather,175,Crime,9.2,100,1323670,134.97,Francis Ford Coppola,Marlon Brando,1972
+3,The Dark Knight,152,Action,9,82,1905413,534.86,Christopher Nolan,Christian Bale,2008
+4,The Godfather: Part II,202,Crime,9,85,914854,57.3,Francis Ford Coppola,Al Pacino,1974
+5,Pulp Fiction,154,Crime,8.9,94,1511653,107.93,Quentin Tarantino,John Travolta,1994
+6,Schindler's List,195,Biography,8.9,93,997570,96.07,Steven Spielberg,Liam Neeson,1993
+7,The Lord of the Rings: The Return of the King,201,Adventure,8.9,94,1381275,377.85,Peter Jackson,Elijah Wood,2003
+8,"Il buono, il brutto, il cattivo",161,Western            ,8.9,90,574055,6.1,Sergio Leone,Clint Eastwood,1957
+9,12 Angry Men,96,Crime,8.9,96,536439,21.7,Sidney Lumet,Henry Fonda,1966
+10,Inception,148,Action,8.8,74,1692709,292.58,Christopher Nolan,Leonardo DiCaprio,2010
+11,The Lord of the Rings: The Fellowship of the Ring,178,Adventure,8.8,92,1400549,315.54,Peter Jackson,Elijah Wood,2001
+12,Forrest Gump,142,Drama,8.8,82,1464979,330.25,Robert Zemeckis,Tom Hanks,1994
+13,Fight Club,139,Drama            ,8.8,66,1549429,37.03,David Fincher,Brad Pitt,1999
+14,Star Wars: Episode V - The Empire Strikes Back,124,Action,8.8,82,973239,290.48,Irvin Kershner,Mark Hamill,1980
+15,Goodfellas,146,Biography,8.7,89,834787,46.84,Martin Scorsese,Robert De Niro,1990
+16,The Matrix,136,Action,8.7,73,1389987,171.48,Lana Wachowski,Keanu Reeves,1999
+17,The Lord of the Rings: The Two Towers,179,Adventure,8.7,87,1250370,342.55,Peter Jackson,Elijah Wood,2002
+18,One Flew Over the Cuckoo's Nest,133,Drama            ,8.7,80,771930,112,Milos Forman,Jack Nicholson,1975
+19,Shichinin no samurai,207,Adventure,8.7,98,262172,0.27,Akira Kurosawa,Toshirô Mifune,1954
+20,Interstellar,169,Adventure,8.6,74,1160405,188.02,Christopher Nolan,Matthew McConaughey,2014
+21,Léon,110,Crime,8.6,64,844425,19.5,Luc Besson,Jean Reno,1995
+22,The Silence of the Lambs,118,Crime,8.6,85,1033711,130.74,Jonathan Demme,Jodie Foster,1977
+23,Saving Private Ryan,169,Drama,8.6,90,1019794,216.54,Steven Spielberg,Tom Hanks,1994
+24,Se7en,127,Crime,8.6,65,1180395,100.13,David Fincher,Morgan Freeman,1991
+25,Star Wars,121,Action,8.6,90,1045206,322.74,George Lucas,Mark Hamill,1998
+26,The Usual Suspects,106,Crime,8.6,77,844175,23.34,Bryan Singer,Kevin Spacey,2001
+27,Sen to Chihiro no kamikakushi,125,Animation,8.6,96,502569,10.06,Hayao Miyazaki,Daveigh Chase,1995
+28,Cidade de Deus,130,Crime,8.6,79,601763,7.56,Fernando Meirelles,Alexandre Rodrigues,1997
+29,Dangal,161,Action,8.6,NA,90612,12.39,Nitesh Tiwari,Aamir Khan,2002
+30,La vita è bella,116,Comedy,8.6,NA,501498,57.6,Roberto Benigni,Roberto Benigni,2016
+31,It's a Wonderful Life,130,Drama,8.6,89,325577,7.27,Frank Capra,James Stewart,1946
+32,City Lights,87,Comedy,8.6,NA,131845,0.02,Charles Chaplin,Charles Chaplin,1931
+33,Coco,105,Animation,8.5,81,148391,209.43,Lee Unkrich,Anthony Gonzalez,2017
+34,The Lion King,88,Animation,8.5,83,757738,312.9,Roger Allers,Matthew Broderick,1999
+35,The Green Mile,189,Crime,8.5,61,921068,136.8,Frank Darabont,Tom Hanks,1985
+36,Gladiator,155,Action,8.5,67,1121561,187.71,Ridley Scott,Russell Crowe,1994
+37,The Departed,151,Crime,8.5,85,997917,132.38,Martin Scorsese,Leonardo DiCaprio,2000
+38,Back to the Future,116,Adventure,8.5,86,853178,210.61,Robert Zemeckis,Michael J. Fox,2006
+39,The Prestige,130,Drama,8.5,66,984159,53.09,Christopher Nolan,Christian Bale,2014
+40,Raiders of the Lost Ark,115,Action,8.5,85,751250,248.16,Steven Spielberg,Harrison Ford,2006
+41,Psycho,109,Horror,8.5,97,490460,32,Alfred Hitchcock,Anthony Perkins,1981
+42,Whiplash,107,Drama,8.5,88,541473,13.09,Damien Chazelle,Miles Teller,1979
+43,Alien,116,Horror,8.5,83,660877,78.9,Ridley Scott,Sigourney Weaver,1960
+44,Apocalypse Now,147,Drama,8.5,94,510001,83.47,Francis Ford Coppola,Martin Sheen,1979
+45,Memento,113,Mystery,8.5,80,964170,25.54,Christopher Nolan,Guy Pearce,2000
+46,American History X,119,Crime,8.5,62,888886,6.72,Tony Kaye,Edward Norton,1991
+47,Terminator 2: Judgment Day,137,Action,8.5,NA,843348,204.84,James Cameron,Arnold Schwarzenegger,1998
+48,The Intouchables,112,Biography,8.5,NA,611033,13.18,Olivier Nakache,François Cluzet,2011
+49,The Pianist,150,Biography,8.5,85,585009,32.57,Roman Polanski,Adrien Brody,1988
+50,Casablanca,102,Drama,8.5,100,441864,1.02,Michael Curtiz,Humphrey Bogart,1942
