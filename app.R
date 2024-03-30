@@ -3,6 +3,8 @@ library(shiny)
 library(ggplot2)
 library(dplyr)
 library(plotly)
+
+# Read the movie data
 movies <- read.csv("movies_data.csv")
 
 # Define UI for application
@@ -27,11 +29,20 @@ ui <- fluidPage(
     ),
     mainPanel(
       width = 9,
-      fluidRow(
-        column(6, plotlyOutput("movies_plot")),
-        column(6, plotlyOutput("directors_plot")),
-        column(6, plotlyOutput("genres_plot")),
-        column(6, dataTableOutput("top_movies_table"))
+      tabsetPanel(
+        tabPanel("Plots",
+                 fluidRow(
+                   column(6, plotlyOutput("movies_plot")),
+                   column(6, plotlyOutput("directors_plot"))
+                 ),
+                 fluidRow(
+                   column(6, plotlyOutput("genres_plot"))
+                 )
+        ),
+        tabPanel("Top Movies by Gross Earning",
+                 dataTableOutput("top_movies_table")),
+        tabPanel("Summary",
+                 verbatimTextOutput("summary_table"))
       )
     )
   )
@@ -105,6 +116,10 @@ server <- function(input, output) {
       select(Title, Director, Gross_Earning_in_Mil)
   }, options = list(pageLength = 3))
   
+  # Summary Table
+  output$summary_table <- renderPrint({
+    summary(filtered_data())
+  })
 }
 
 # Run the application
