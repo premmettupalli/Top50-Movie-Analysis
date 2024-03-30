@@ -114,7 +114,7 @@ server <- function(input, output) {
       arrange(desc(Gross_Earning_in_Mil)) %>%
       slice(1:20) %>%
       select(Title, Director, Gross_Earning_in_Mil)
-  }, options = list(pageLength = 3))
+  }, options = list(pageLength = 10))  # Display 10 rows per page
   
   # Summary Table
   output$summary_table <- renderPrint({
