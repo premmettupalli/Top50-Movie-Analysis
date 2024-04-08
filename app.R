@@ -3,9 +3,10 @@ library(shiny)
 library(ggplot2)
 library(dplyr)
 library(plotly)
+library(readxl)
 
 # Read the movie data
-movies <- read.csv("movies_data.csv")
+movies <- readxl::read_xlsx("movies_data.xlsx")
 
 # Define UI for application
 ui <- fluidPage(
@@ -24,6 +25,7 @@ ui <- fluidPage(
       sliderInput("rating_filter", "Filter by Rating:",
                   min = min(movies$Rating), max = max(movies$Rating),
                   value = c(min(movies$Rating), max(movies$Rating)), step = 0.1),
+      actionButton("clear_filters", "Clear All Filters"),
       hr(),
       helpText("Note: Not all plots may have valid data for all categories.")
     ),
@@ -36,7 +38,8 @@ ui <- fluidPage(
                    column(6, plotlyOutput("directors_plot"))
                  ),
                  fluidRow(
-                   column(6, plotlyOutput("genres_plot"))
+                   column(6, plotlyOutput("genres_plot")),
+                   column(6, plotlyOutput("correlation_plot"))
                  )
         ),
         tabPanel("Top Movies by Gross Earning",
@@ -49,7 +52,7 @@ ui <- fluidPage(
 )
 
 # Define server logic
-server <- function(input, output) {
+server <- function(input, output, session) {
   
   # Reactive filtering based on genre, director, year, and rating selection
   filtered_data <- reactive({
@@ -66,6 +69,14 @@ server <- function(input, output) {
     return(filtered)
   })
   
+  # Clear all filters button
+  observeEvent(input$clear_filters, {
+    updateSelectInput(session, "genre_filter", selected = "All")
+    updateSelectInput(session, "director_filter", selected = "All")
+    updateSliderInput(session, "year_filter", value = c(min(movies$Year), max(movies$Year)))
+    updateSliderInput(session, "rating_filter", value = c(min(movies$Rating), max(movies$Rating)))
+  })
+  
   # Top 20 Movies by Votes
   output$movies_plot <- renderPlotly({
     filtered_movies <- filtered_data() %>%
@@ -73,7 +84,7 @@ server <- function(input, output) {
       slice(1:20)
     p <- ggplot(filtered_movies, aes(x = reorder(Title, Votes), y = Votes)) +
       geom_bar(stat = "identity", fill = "skyblue") +
-      labs(x = "Movie", y = "Votes", title = "Top 20 Movies by Votes") +
+      labs(x = "Movie", y = "Votes", title = "Top 20 Movies by total Votes") +
       theme(axis.text.x = element_text(angle = 45, hjust = 1))
     ggplotly(p)
   })
@@ -113,12 +124,21 @@ server <- function(input, output) {
     filtered_data() %>%
       arrange(desc(Gross_Earning_in_Mil)) %>%
       slice(1:20) %>%
-      select(Title, Director, Gross_Earning_in_Mil)
+      select(Title, Director, Gross_Earning_in_Mil, Genre)
   }, options = list(pageLength = 10))  # Display 10 rows per page
   
   # Summary Table
   output$summary_table <- renderPrint({
     summary(filtered_data())
+  })
+  
+  # Correlation plot between Budget and Profit
+  output$correlation_plot <- renderPlotly({
+    p <- ggplot(filtered_data(), aes(x = Budget_in_Million, y = Profit_in_Mil)) +
+      geom_point() +
+      geom_smooth(method = "lm", se = FALSE) +
+      labs(x = "Budget (in million)", y = "Profit (in million)", title = "Correlation between Budget and Profit")
+    ggplotly(p)
   })
 }
 

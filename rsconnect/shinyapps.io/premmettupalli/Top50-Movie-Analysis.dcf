@@ -5,7 +5,7 @@ account: premmettupalli
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 11621461
-bundleId: 8433952
+bundleId: 8465508
 url: https://premmettupalli.shinyapps.io/Top50-Movie-Analysis/
 version: 1
 asMultiple: FALSE
