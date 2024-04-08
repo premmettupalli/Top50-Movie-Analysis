@@ -1,5 +1,5 @@
 ---
-title: "Movie Statistics Dashboard \n Prem Chandra Skehar Reddy Mettupalli \n 08262627"
+title:   "      Movie Statistics Dashboard \\newline \\small Prem Chandra Sekhar Reddy Mettupalli \\newline 0826227"
 output: pdf_document
 date: "2024-04-08"
 ---
@@ -13,6 +13,22 @@ When ever we watch a nice movie we might sometimes think about the different fac
 Analyzing top movies which have performed well at boxofiice and also which were accepted by wide range of people help filmmakers to decide on what kind of films they need to make or it will at least help them in making a good movie. This also helps viewers to pick movies to watch with out wasting much time on selecting what to watch.
 
 The performance of a movie depends upon several factors such as Budget spent on it, Genre of the movie, directors, actors and etc. Analyzing these factors helps filmmakers to decide on which things they need to invest their talent, time, and money.
+
+# **Purpose:**
+
+**Accessing the dashboard and related files**
+
+-   The following link below will navigate you to the web browser of the dashboard: [Movie Statistics](https://premmettupalli.shinyapps.io/Top50-Movie-Analysis/)
+
+-   The following git hub repository contains all the files related to the dashboard including R code and the data set: <https://github.com/premmettupalli/Top50-Movie-Analysis.git>
+
+A web based interactive dashboard was created to visualize the data related to the top 20 movies among the 50 movies that we have in our data set using R shiny.
+
+Our data set contains a list of IMDB top 50 rated movies and details of those movies like the director of the movie, budget of the movie, gross earnings, profit, genre, year in which the movie was released run time and etc. A web based interactive dashboard was created to visualize this data using R shiny
+
+This interactive visual dashboard helps in analyzing the trend of top 20 movies from the 50 that we have collected, which are being liked by wide range and verity of people. This dashboard also helps in finding out the insights which made the films this popular so that investors and directors can focus on them while making a movie. Viewers can also interact with the dash board to find out more things about the movies they liked and can use them to search similar kind of movies to watch, if they like a top movie they can find out its genre and the director who directed it and can search for some similar films which have these things in common.
+
+This dashboard visualizes the movie data using plots like bar-charts, pie-charts, Tables, and scatter-plots these plots and tables will be interactive and they also have filtering options such that you can only look at what you want.
 
 # **Data set:**
 
@@ -44,16 +60,6 @@ Different fields of the data:
 
 -   Profit_in_Mil: Total profit of made by the movie in millions.
 
-# **Purpose:**
-
-A web based interactive dashboard was created to visualize the data related to the top 20 movies among the 50 movies that we have in our data set using R shiny.
-
-Our data set contains a list of IMDB top 50 rated movies and details of those movies like the director of the movie, budget of the movie, gross earnings, profit, genre, year in which the movie was released run time and etc. A web based interactive dashboard was created to visualize this data using R shiny
-
-This interactive visual dashboard helps in analyzing the trend of top 20 movies from the 50 that we have collected, which are being liked by wide range and verity of people. This dashboard also helps in finding out the insights which made the films this popular so that investors and directors can focus on them while making a movie. Viewers can also interact with the dash board to find out more things about the movies they liked and can use them to search similar kind of movies to watch, if they like a top movie they can find out its genre and the director who directed it and can search for some similar films which have these things in common.
-
-This dashboard visualizes the movie data using plots like bar-charts, pie-charts, Tables, and scatter-plots these plots and tables will be interactive and they also have filtering options such that you can only look at what you want.
-
 # **Problems addressed and related previous studies:**
 
 This Dashboard helps in comparing *top 20* movies across different categories like ratings, Gross Earnings, Number of votes, Genre and etc all together in one place which will give some useful insights to the users.
@@ -76,7 +82,7 @@ Budget is an important aspect that majorly contributes to the profits that can b
 
 # Components of the Dashboard:
 
-The dashboard contains different tabs with plots and tables:
+The dashboard contains 3 different tabs with plots and tables:
 
 1.  Plots Tab
 
@@ -88,17 +94,17 @@ The dashboard contains different tabs with plots and tables:
 
 The Dashboard contains 4 plots in total.
 
--   ***Top Movies by total votes :*** this bar chart Shows the top 20 movies based on the total votes they have received. Looking at the plot we can say that The shawshank redemption stands in the top when it comes to the overall ratings received and The Prestige stands last.
+-   ***Top Movies by total votes :*** This bar chart Shows the top 20 movies based on the total votes they have received. Looking at the plot we can say that The Shawshank Redemption stands in the top when it comes to the overall ratings received and The Prestige stands last.
 
 -   ***Top Directors by total votes:*** This bar chart shows the top 20 Directors based on the total number of votes they have received for all the movies in the top 20 that are made by them. From the bar plot we can say that Christopher Nolan is the most rated (Highest number of votes) director in the top 20 movies list.
 
--   ***Proportions of different Genres:*** The pie chart displays the proportions of each genre that are related to the top 20 movies. The pie chart depicts that Crime and Drama constitutes to the majority of the proportion where as mystery, western, horror, and comedy are the least interested genres***.***
+-   ***Proportions of different Genres:*** The pie chart displays the proportions of each genre that are related to the top 20 movies. The pie chart depicts that two genres namely Crime and Drama constitutes to the majority of the proportion where as mystery, western, horror, and comedy are the least interested genres***.***
 
--   ***Relation between Budget and Profit:*** The correlation plot depicts about the relation between the budget spent on a movie in millions and the profit gained by the movie in millions. User can interact with the plot. As indicated by the blue linear relation trend line our correlation plot shows a positive relationship or association between the variables budget and profit. We can not say that budget alone is associated with profits of a movie there are many other factors that contributes to the success of a movie.
+-   ***Relation between Budget and Profit:*** The correlation plot depicts about the relation between the budget spent on a movie in millions and the profit gained by the movie in millions. As indicated by the blue linear relation trend line our correlation plot shows a positive relationship or association between the variables budget and profit. We can not say that budget alone is associated with profits of a movie, indeed there are many other factors that contributes to the success of a movie.
 
 **Top Movies by gross earnings Tab:**
 
-This tab contains a table which is used to display the top 20 movies based on their gross earnings. It has four different columns namely Title, Director, Gross_Earnings_in_mil, Genre. This table helps in comparing the gross earnings of a movie with its genre and also gives the director name.
+This tab contains a table which is used to display the top 20 movies based on their gross earnings. It has four different columns namely Title, Director, Gross_Earnings_in_mil, and Genre. This table helps in comparing the gross earnings of a movie with its genre and also gives the director name.
 
 **Summary Tab:**
 
@@ -132,7 +138,13 @@ Summary table in this tab display the summary of all the fields related to the t
 
 # **Conclusion**
 
-The Interactive Movie Statistics Analysis Application provides users with a powerful tool for analyzing and exploring movie data. By addressing the problems of limited data visualization tools, complex data analysis processes, and limited access to movie data, the application aims to empower users to make informed decisions and gain valuable insights into the movie industry.
+This interactive movie statistics dashboard helps users to analyse the different aspect of the top 20 movies such that they can have some useful insights from it. Investors movie producers and directors can analyse the movies that made to the top and can make decisions on their future film-making projects. There are other movie statistics dashboards but they are limited to visualizing one or two aspects of it, this dashboard addresses that problem by bringing everything together, it shows the relation between various factors of a successful movie with the help of some interactive plots and tables. From this dashboard we can say that most of the movies that made to top 20 are from Crime, Drama, and Action genres. The correlation plot shows that there is a significant relation between the profits made by a movie and the budget of the movie.
+
+**Limitations:**
+
+-   In this dashboard we have only looked for the relationship between budget and profit. Profits usually don't depends solely on the budget there are other external factors like marketing, cast of the movie, and etc.
+
+-   Across the years peoples interest toward the genres might have varied a lot as the way of presenting the movies from their respective genres have evolved so much due to the advancement in technology, so comparative and predictive analysis of movies based on their genre alone might be difficult to predict its performance.
 
 # References:
 
@@ -144,6 +156,6 @@ The Interactive Movie Statistics Analysis Application provides users with a powe
 
 4.  Rshinny
 
-5.  plotty
+5.  plotly
 
-6.  
+6.  data set

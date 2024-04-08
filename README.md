@@ -201,11 +201,6 @@ data analysis processes, and limited access to movie data, the
 application aims to empower users to make informed decisions and gain
 valuable insights into the movie industry.
 
-Please note that this is a general outline, and you may need to
-customize it based on the specific details and features of your
-application. Additionally, you may need to add more details and examples
-to meet the 2000-word requirement.
-
 # Movies Statistics - An Interactive Dashboard:
 
 # **Introduction:**
@@ -289,7 +284,7 @@ pie-charts, Tables, and scatter-plots these plots and tables will be
 interactive and they also have filtering options such that you can only
 look at what you want.
 
-# **Problems addressed and related previous studies :**
+# **Problems addressed and related previous studies:**
 
 This Dashboard helps in comparing *top 20* movies across different
 categories like ratings, Gross Earnings, Number of votes, Genre and etc
@@ -443,7 +438,7 @@ median, mode, minimum and maximum values of the corresponding fields.
         received. It ranges from the maximum rating to the minimum
         rating values that are present in the top 20.
 
-    -    ***Filter by Director:*** This is a drop down filter with which
+    -   ***Filter by Director:*** This is a drop down filter with which
         an user can select the director of their interest to display the
         statistics of the movies that are associated to that particular
         director. This filter has a drop down menu which includes

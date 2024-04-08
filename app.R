@@ -5,10 +5,10 @@ library(dplyr)
 library(plotly)
 library(readxl)
 
-# Read the movie data
+# Reading the dataset
 movies <- readxl::read_xlsx("movies_data.xlsx")
 
-# Define UI for application
+# Defining UI for the dashboard
 ui <- fluidPage(
   titlePanel("Movie Statistics"),
   sidebarLayout(
@@ -51,10 +51,10 @@ ui <- fluidPage(
   )
 )
 
-# Define server logic
+# Defining the server logic for the dashboard 
 server <- function(input, output, session) {
   
-  # Reactive filtering based on genre, director, year, and rating selection
+  # Adding Genre, Director,Year, and Ratings filters to the dashboard 
   filtered_data <- reactive({
     filtered <- movies
     if (input$genre_filter != "All") {
@@ -69,7 +69,7 @@ server <- function(input, output, session) {
     return(filtered)
   })
   
-  # Clear all filters button
+  # adding fliters clearing button
   observeEvent(input$clear_filters, {
     updateSelectInput(session, "genre_filter", selected = "All")
     updateSelectInput(session, "director_filter", selected = "All")
@@ -77,7 +77,7 @@ server <- function(input, output, session) {
     updateSliderInput(session, "rating_filter", value = c(min(movies$Rating), max(movies$Rating)))
   })
   
-  # Top 20 Movies by Votes
+  #Plot of Top 20 Movies by Votes
   output$movies_plot <- renderPlotly({
     filtered_movies <- filtered_data() %>%
       arrange(desc(Votes)) %>%
@@ -89,7 +89,7 @@ server <- function(input, output, session) {
     ggplotly(p)
   })
   
-  # Top 20 Directors by Votes
+  #Plot of Top 20 Directors by Votes
   output$directors_plot <- renderPlotly({
     top_directors <- filtered_data() %>%
       group_by(Director) %>%
@@ -103,7 +103,7 @@ server <- function(input, output, session) {
     ggplotly(p)
   })
   
-  # Genre Proportions
+  #Pie chart for Genre Proportions
   output$genres_plot <- renderPlotly({
     genre_proportions <- filtered_data() %>%
       group_by(Genre) %>%
@@ -119,7 +119,7 @@ server <- function(input, output, session) {
     p
   })
   
-  # Table of Top Movies
+  # Table of Movies based on the gross earnings in millions 
   output$top_movies_table <- renderDataTable({
     filtered_data() %>%
       arrange(desc(Gross_Earning_in_Mil)) %>%
@@ -132,7 +132,7 @@ server <- function(input, output, session) {
     summary(filtered_data())
   })
   
-  # Correlation plot between Budget and Profit
+  # Correlation plot between Budgets in million and Profit in million
   output$correlation_plot <- renderPlotly({
     p <- ggplot(filtered_data(), aes(x = Budget_in_Million, y = Profit_in_Mil)) +
       geom_point() +
@@ -142,5 +142,4 @@ server <- function(input, output, session) {
   })
 }
 
-# Run the application
 shinyApp(ui = ui, server = server)
