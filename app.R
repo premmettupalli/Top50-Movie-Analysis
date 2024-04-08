@@ -1,4 +1,4 @@
-# Load necessary libraries
+# Loading necessary libraries
 library(shiny)
 library(ggplot2)
 library(dplyr)
@@ -141,7 +141,7 @@ server <- function(input, output, session) {
       arrange(desc(Gross_Earning_in_Mil)) %>%
       slice(1:20) %>%
       select(Title, Director, Gross_Earning_in_Mil, Genre)
-  }, options = list(pageLength = 10))  # Display 10 rows per page
+  }, options = list(pageLength = 10)) 
   
   # Summary Table
   output$summary_table <- renderPrint({

@@ -12,7 +12,7 @@ The performance of a movie depends upon several factors such as Budget spent on 
 
 **Accessing the dashboard and related files**
 
--   The following link below will navigate you to the web browser of the dashboard: [Movie Statistics](https://premmettupalli.shinyapps.io/Top50-Movie-Analysis/)
+-   The following link below will navigate you to the web browser of the dashboard: [Movie Statistics](https://premmettupalli.shinyapps.io/Top50-Movie-Analysis/) - <https://premmettupalli.shinyapps.io/Top50-Movie-Analysis/>
 
 -   The following git hub repository contains all the files related to the dashboard including R code and the data set: <https://github.com/premmettupalli/Top50-Movie-Analysis.git>
 
@@ -148,6 +148,6 @@ This interactive movie statistics dashboard helps users to analyse the different
 
 3.  Yasemin Bozdogan: The determinants of box office revenue: a case based study: thirty, low budget, highest ROI films vs. thirty, big budget, highest grossing Hollywood films. Economics and Finance. (2013). ffdumas-00909948f :<https://dumas.ccsd.cnrs.fr/dumas-00909948/document>.
 
-4.   R Graph Gallery, “Data Visualization with R.” [Online]. Available: <https://r-graph-gallery.com/>
+4.  R Graph Gallery, “Data Visualization with R.” [Online]. Available: <https://r-graph-gallery.com/>
 
-5.   ADITYA SHARMA, “IMDB top 50 movies”. Available: <https://www.kaggle.com/datasets/aditya1303/imdb-top-50-movies>
+5.  ADITYA SHARMA, “IMDB top 50 movies”. Available: <https://www.kaggle.com/datasets/aditya1303/imdb-top-50-movies>
