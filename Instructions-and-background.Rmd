@@ -1,6 +1,6 @@
 ---
-title: "Movie Statistics Dashboard"
-author : "Prem Chandra Sekhar Reddy Mettupalli 0826227"
+title:   "Movie Statistics Dashboard"
+author : "Prem Chandra Sekhar Reddy Mettupalli - 0826227"
 output: pdf_document
 date: "2024-04-08"
 ---
