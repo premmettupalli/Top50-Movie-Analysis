@@ -4,203 +4,6 @@ editor_options:
     wrap: 72
 ---
 
-# Top50-Movie-Analysis
-
-Data Analytics with R assignment
-
-<https://premmettupalli.shinyapps.io/Top50-Movie-Analysis/>
-
-Movie Statistics Application Purpose The Movie Statistics application is
-designed to provide insights into movie data, allowing users to explore
-trends, analyze ratings, and understand the distribution of movies based
-on various factors such as genre, director, and rating. The application
-aims to make movie data more accessible and understandable to users,
-enabling them to make informed decisions and gain a deeper understanding
-of the movie industry.
-
-Problems Addressed Data Exploration: The application addresses the need
-for a tool that allows users to explore and visualize movie data easily.
-By providing interactive plots and visualizations, users can gain
-insights into the distribution of movies across different genres,
-directors, and ratings.
-
-Trend Analysis: The application enables users to analyze trends in movie
-ratings and popularity over time. This can help users understand the
-evolution of the movie industry and identify factors that contribute to
-the success of movies.
-
-Decision Making: The application assists users in making informed
-decisions related to movie selection, investment, and production. By
-providing data-driven insights, users can make better decisions that are
-backed by statistical analysis.
-
-Literature Review The application is inspired by several studies and
-research papers in the field of movie analytics and data visualization.
-According to a study by Yu et al. (2016), data visualization plays a
-crucial role in understanding complex datasets, such as movie data, by
-providing visual representations that are easy to interpret. Another
-study by Yan et al. (2017) emphasizes the importance of interactive
-visualizations in exploring large datasets, allowing users to interact
-with the data and gain deeper insights.
-
-Application Features Interactive Plots: The application provides
-interactive plots that allow users to filter data based on genre,
-director, year, and rating. This enables users to customize the plots
-according to their preferences and focus on specific aspects of the
-data.
-
-Data Exploration: Users can explore movie data by visualizing the
-distribution of movies across different genres, directors, and ratings.
-This helps users understand the diversity of movies and identify
-patterns in the data.
-
-Trend Analysis: The application enables users to analyze trends in movie
-ratings and popularity over time. Users can visualize how ratings have
-changed over the years and identify trends that may impact future movie
-production.
-
-Decision Making: By providing data-driven insights, the application
-helps users make informed decisions related to movie selection,
-investment, and production. Users can use the insights gained from the
-application to make better decisions that are backed by statistical
-analysis.
-
-Instructions for Use Filter Data: Use the sidebar filters to select the
-genre, director, year, and rating range for the movies you want to
-analyze.
-
-Explore Plots: Navigate to the "Plots" tab to explore interactive plots
-that visualize the distribution of movies based on your selected
-filters.
-
-Analyze Trends: Use the plots to analyze trends in movie ratings and
-popularity over time. Identify patterns and trends that may impact
-future movie production.
-
-Make Decisions: Use the insights gained from the application to make
-informed decisions related to movie selection, investment, and
-production.
-
-This document provides an overview of the Movie Statistics application,
-highlighting its purpose, the problems it addresses, and instructions
-for its operation. The application aims to provide users with a powerful
-tool for exploring movie data and gaining valuable insights into the
-movie industry.
-
-# **Title: Interactive Movie Statistics Analysis Application**
-
-## **Table of Contents**
-
-1.  Introduction
-
-2.  Purpose of the Application
-
-3.  Problems Addressed
-
-4.  Literature Review
-
-5.  Application Overview
-
-6.  How to Use the Application
-
-7.  Conclusion
-
-## **1. Introduction**
-
-The Interactive Movie Statistics Analysis Application is a web-based
-tool developed to provide users with an interactive platform to analyze
-and explore movie data. This document provides an overview of the
-application, including its purpose, the problems it addresses, and
-instructions on how to use it effectively.
-
-## **2. Purpose of the Application**
-
-The primary purpose of the application is to allow users to visualize
-and analyze movie data in an interactive and intuitive manner. It aims
-to provide insights into various aspects of the movie industry, such as
-movie ratings, box office performance, directorial trends, and genre
-popularity.
-
-## **3. Problems Addressed**
-
-### **3.1 Lack of Data Visualization Tools**
-
-Many existing tools for analyzing movie data lack interactivity and
-visual appeal, making it challenging for users to gain meaningful
-insights from the data.
-
-### **3.2 Complex Data Analysis Processes**
-
-Analyzing movie data often requires complex data manipulation and
-analysis techniques, which can be time-consuming and challenging for
-users without a background in data analysis.
-
-### **3.3 Limited Access to Movie Data**
-
-Access to comprehensive and up-to-date movie data can be limited, making
-it difficult for researchers, filmmakers, and industry professionals to
-make informed decisions.
-
-## **4. Literature Review**
-
-Several studies have highlighted the importance of data visualization in
-enhancing understanding and decision-making in various fields, including
-the movie industry. According to Xie et al. (2019), interactive
-visualization tools can help users explore complex data sets and
-identify patterns and trends more effectively. Similarly, Wang et al.
-(2018) emphasize the importance of interactive data analysis tools in
-enabling users to interactively explore and analyze large data sets.
-
-## **5. Application Overview**
-
-The Interactive Movie Statistics Analysis Application is designed to
-address the problems mentioned above by providing users with an
-easy-to-use and interactive platform for analyzing movie data. The
-application allows users to filter data based on various criteria, such
-as genre, director, year, and rating, and visualize the results using
-interactive plots and charts.
-
-## **6. How to Use the Application**
-
-### **6.1 Accessing the Application**
-
-Users can access the application through a web browser by entering the
-URL of the application.
-
-### **6.2 Filtering Data**
-
-Users can filter the data based on genre, director, year, and rating
-using the sidebar panel in the application. They can select the desired
-filters from the dropdown menus and sliders and click on the "Apply"
-button to update the data.
-
-### **6.3 Visualizing Data**
-
-The application provides several interactive plots and charts for
-visualizing the data, including bar charts, pie charts, and scatter
-plots. Users can click on different elements of the plots to drill down
-into the data and explore specific details.
-
-### **6.4 Viewing Top Movies**
-
-Users can view a table of the top movies based on gross earning by
-clicking on the "Top Movies by Gross Earning" tab. The table displays
-the title, director, and gross earning of the top movies.
-
-### **6.5 Summary**
-
-The "Summary" tab displays a summary of the filtered data, including the
-total number of movies, average rating, and total gross earning.
-
-## **7. Conclusion**
-
-The Interactive Movie Statistics Analysis Application provides users
-with a powerful tool for analyzing and exploring movie data. By
-addressing the problems of limited data visualization tools, complex
-data analysis processes, and limited access to movie data, the
-application aims to empower users to make informed decisions and gain
-valuable insights into the movie industry.
-
 # Movies Statistics - An Interactive Dashboard:
 
 # **Introduction:**
@@ -222,6 +25,44 @@ The performance of a movie depends upon several factors such as Budget
 spent on it, Genre of the movie, directors, actors and etc. Analyzing
 these factors helps filmmakers to decide on which things they need to
 invest their talent, time, and money.
+
+# **Purpose:**
+
+**Accessing the dashboard and related files**
+
+-   The following link below will navigate you to the web browser of the
+    dashboard: [Movie
+    Statistics](https://premmettupalli.shinyapps.io/Top50-Movie-Analysis/)
+
+-   The following git hub repository contains all the files related to
+    the dashboard including R code and the data set:
+    <https://github.com/premmettupalli/Top50-Movie-Analysis.git>
+
+A web based interactive dashboard was created to visualize the data
+related to the top 20 movies among the 50 movies that we have in our
+data set using R shiny.
+
+Our data set contains a list of IMDB top 50 rated movies and details of
+those movies like the director of the movie, budget of the movie, gross
+earnings, profit, genre, year in which the movie was released run time
+and etc. A web based interactive dashboard was created to visualize this
+data using R shiny
+
+This interactive visual dashboard helps in analyzing the trend of top 20
+movies from the 50 that we have collected, which are being liked by wide
+range and verity of people. This dashboard also helps in finding out the
+insights which made the films this popular so that investors and
+directors can focus on them while making a movie. Viewers can also
+interact with the dash board to find out more things about the movies
+they liked and can use them to search similar kind of movies to watch,
+if they like a top movie they can find out its genre and the director
+who directed it and can search for some similar films which have these
+things in common.
+
+This dashboard visualizes the movie data using plots like bar-charts,
+pie-charts, Tables, and scatter-plots these plots and tables will be
+interactive and they also have filtering options such that you can only
+look at what you want.
 
 # **Data set:**
 
@@ -255,34 +96,6 @@ Different fields of the data:
 -   Budget_in_Million: Overall Budget spent on a movie in millions.
 
 -   Profit_in_Mil: Total profit of made by the movie in millions.
-
-# **Purpose:**
-
-A web based interactive dashboard was created to visualize the data
-related to the top 20 movies among the 50 movies that we have in our
-data set using R shiny.
-
-Our data set contains a list of IMDB top 50 rated movies and details of
-those movies like the director of the movie, budget of the movie, gross
-earnings, profit, genre, year in which the movie was released run time
-and etc. A web based interactive dashboard was created to visualize this
-data using R shiny
-
-This interactive visual dashboard helps in analyzing the trend of top 20
-movies from the 50 that we have collected, which are being liked by wide
-range and verity of people. This dashboard also helps in finding out the
-insights which made the films this popular so that investors and
-directors can focus on them while making a movie. Viewers can also
-interact with the dash board to find out more things about the movies
-they liked and can use them to search similar kind of movies to watch,
-if they like a top movie they can find out its genre and the director
-who directed it and can search for some similar films which have these
-things in common.
-
-This dashboard visualizes the movie data using plots like bar-charts,
-pie-charts, Tables, and scatter-plots these plots and tables will be
-interactive and they also have filtering options such that you can only
-look at what you want.
 
 # **Problems addressed and related previous studies:**
 
@@ -329,9 +142,11 @@ by the movie.
 correlation with box office revenue, the other ten determinants found to
 be insignificant."[3]*
 
-# Different components of the Dashboard:
+\newpage
 
-The dashboard contains different tabs with plots and tables:
+# Components of the Dashboard:
+
+The dashboard contains 3 different tabs with plots and tables:
 
 1.  Plots Tab
 
@@ -343,9 +158,9 @@ The dashboard contains different tabs with plots and tables:
 
 The Dashboard contains 4 plots in total.
 
--   ***Top Movies by total votes :*** this bar chart Shows the top 20
+-   ***Top Movies by total votes :*** This bar chart Shows the top 20
     movies based on the total votes they have received. Looking at the
-    plot we can say that The shawshank redemption stands in the top when
+    plot we can say that The Shawshank Redemption stands in the top when
     it comes to the overall ratings received and The Prestige stands
     last.
 
@@ -357,24 +172,24 @@ The Dashboard contains 4 plots in total.
 
 -   ***Proportions of different Genres:*** The pie chart displays the
     proportions of each genre that are related to the top 20 movies. The
-    pie chart depicts that Crime and Drama constitutes to the majority
-    of the proportion where as mystery, western, horror, and comedy are
-    the least interested genres***.***
+    pie chart depicts that two genres namely Crime and Drama constitutes
+    to the majority of the proportion where as mystery, western, horror,
+    and comedy are the least interested genres***.***
 
 -   ***Relation between Budget and Profit:*** The correlation plot
     depicts about the relation between the budget spent on a movie in
-    millions and the profit gained by the movie in millions. User can
-    interact with the plot. As indicated by the blue linear relation
-    trend line our correlation plot shows a positive relationship or
-    association between the variables budget and profit. We can not say
-    that budget alone is associated with profits of a movie there are
-    many other factors that contributes to the success of a movie.
+    millions and the profit gained by the movie in millions. As
+    indicated by the blue linear relation trend line our correlation
+    plot shows a positive relationship or association between the
+    variables budget and profit. We can not say that budget alone is
+    associated with profits of a movie, indeed there are many other
+    factors that contributes to the success of a movie.
 
 **Top Movies by gross earnings Tab:**
 
 This tab contains a table which is used to display the top 20 movies
 based on their gross earnings. It has four different columns namely
-Title, Director, Gross_Earnings_in_mil, Genre. This table helps in
+Title, Director, Gross_Earnings_in_mil, and Genre. This table helps in
 comparing the gross earnings of a movie with its genre and also gives
 the director name.
 
@@ -445,6 +260,35 @@ median, mode, minimum and maximum values of the corresponding fields.
         options for selecting all the different directors of the top 20
         movie.
 
+# **Conclusion**
+
+This interactive movie statistics dashboard helps users to analyse the
+different aspect of the top 20 movies such that they can have some
+useful insights from it. Investors movie producers and directors can
+analyse the movies that made to the top and can make decisions on their
+future film-making projects. There are other movie statistics dashboards
+but they are limited to visualizing one or two aspects of it, this
+dashboard addresses that problem by bringing everything together, it
+shows the relation between various factors of a successful movie with
+the help of some interactive plots and tables. From this dashboard we
+can say that most of the movies that made to top 20 are from Crime,
+Drama, and Action genres. The correlation plot shows that there is a
+significant relation between the profits made by a movie and the budget
+of the movie.
+
+**Limitations:**
+
+-   In this dashboard we have only looked for the relationship between
+    budget and profit. Profits usually don't depends solely on the
+    budget there are other external factors like marketing, cast of the
+    movie, and etc.
+
+-   Across the years peoples interest toward the genres might have
+    varied a lot as the way of presenting the movies from their
+    respective genres have evolved so much due to the advancement in
+    technology, so comparative and predictive analysis of movies based
+    on their genre alone might be difficult to predict its performance.
+
 # References:
 
 1.  [Zheng
@@ -478,6 +322,6 @@ median, mode, minimum and maximum values of the corresponding fields.
 
 4.  Rshinny
 
-5.  plotty
+5.  plotly
 
-6.  
+6.  data set
